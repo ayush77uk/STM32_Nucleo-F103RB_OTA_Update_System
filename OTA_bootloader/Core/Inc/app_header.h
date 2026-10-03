@@ -1,0 +1,21 @@
+/*
+ * app_header.h
+ *
+ *  Created on: Jun 30, 2026
+ *      Author: Ayush Singh
+ */
+
+#ifndef INC_APP_HEADER_H_
+#define INC_APP_HEADER_H_
+
+#define APP_MAGIC 0xABCDEFAB
+
+typedef struct{
+	uint32_t ota_flag;
+	uint32_t magic;
+	uint32_t size;
+	uint32_t crc;
+	uint32_t version;
+}app_header_t;
+
+#endif /* INC_APP_HEADER_H_ */
